@@ -1,0 +1,22 @@
+html
+    head
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+        title login
+    body.container
+        h1 LOGIN
+        span= message
+        p Please login to START
+
+        form(method="POST").form-group
+            label(for="username") username
+            input(type="text", placeholder="username here", name = "username").form-control
+            br
+            br
+            label(for="password") password
+            input(type="password", placeholder="password here", name = "password").form-control
+            br
+            input(type="submit", value="login").btn.btn-primary
+
+        p Don't have an account ?
+            span Register
+                a(href="/auth/register")  here

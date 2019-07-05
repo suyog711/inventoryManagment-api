@@ -1,0 +1,29 @@
+html
+    head
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+        title Register
+    body.container
+        h1 Register
+        p Please register to START
+
+        form(method="POST").form-group
+            label(for="name") name
+            input(type="text", placeholder="name here", name = "name").form-control
+            br
+            br
+            label(for="phoneNumber") phone number
+            input(type="number", placeholder="number here", name = "phoneNumber").form-control
+            br
+            br
+            label(for="username") username
+            input(type="text", placeholder="username here", name = "username").form-control
+            br
+            br
+            label(for="password") password
+            input(type="password", placeholder="password here", name = "password").form-control
+            br
+            input(type="submit", value="submit").btn.btn-primary
+
+        p Already registered ?
+            span Login
+                a(href="/auth/login")  here
